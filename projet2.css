@@ -1,0 +1,487 @@
+/*
+projet2.css
+---------
+ 
+Par Mathilde Mercier
+*/
+
+
+/*MENU*/
+#bloc_page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+#menu {
+    width: 100%;
+    height: 4.5em;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+}
+
+#logo {
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+ul
+
+/* enlever puces list-style-type: none*/
+    {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 8em;
+    line-height: 2em;
+
+}
+
+ul#inligne li
+
+/*display:inline mettre liste en ligne margin-right permet espacer texte*/
+    {
+    display: inline;
+    text-align: center;
+    margin-right: 2em;
+    font-size: 1.3em;
+    text-decoration: black;
+}
+
+a
+
+/* Liens par défaut (non survolés) */
+    {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+
+}
+
+ul#inligne li:hover
+
+/* Apparence au survol des liens */
+    {
+    border-top: solid #5CADD3;
+    color: black;
+    line-height: 2em;
+    padding-top: 1em
+}
+
+ul#inligne li:focus
+
+/* Quand le visiteur sélectionne le lien */
+    {
+    border-top: solid #5CADD3;
+    color: black;
+}
+
+
+/*PAGE D'ACCUEIL*/
+
+#pageaccueil {
+    padding-top: 100px;
+    position: relative;
+}
+
+.images_accueil img {
+    width: 100%;
+    height: auto;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+}
+
+.fa-angle-right {
+    position: absolute;
+    font-size: 16px;
+    top: calc(50%);
+    right: 0;
+    color: #F4F5F5;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 15px;
+    height: 40px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.fa-angle-left {
+    position: absolute;
+    font-size: 16px;
+    top: calc(50%);
+    color: #F4F5F5;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 15px;
+    height: 40px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+.texte_accueil {
+    position: absolute;
+    padding: 10%;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    margin: auto; 
+    bottom: 0;
+}
+
+.blue {
+    color: rgb(92, 173, 211);
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+button {
+    background-color: rgb(92, 173, 211);
+    border: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 4px solid #438aa6;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.barre1 {
+    width: 10%;
+    height: 3.5px;
+    background-color: #8AC4E0;
+    position: absolute;
+    bottom: 0;
+}
+
+.barre2 {
+    width: 100%;
+    height: 3.5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+}
+
+/*PAGE SERVICES*/
+#pageservices {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a"
+        "b c";
+}
+
+.cercle {
+    position: relative;
+    z-index: 2;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: auto;
+    border: solid 3px white;
+    color: rgb(92, 173, 211);
+}
+
+.trait {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    width: 150px;
+    height: 2px;
+    background-color: #EAEAEA;
+    transform: translateY(-9px);
+}
+
+
+.presentation {
+    grid-area: a;
+    text-align: center;
+
+}
+
+.illustration {
+    grid-area: b;
+    margin-top: 1em;
+}
+
+.explication {
+    grid-area: c;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "d"
+        "e"
+        "f"
+        "g";
+}
+
+.ux {
+    grid-area: e;
+}
+
+.vide {
+    grid-area: d;
+}
+
+.ui {
+    grid-area: f;
+}
+
+.seo {
+    grid-area: g;
+}
+
+
+.texte {
+    margin-left: 5em;
+}
+
+.Icone_services {
+    position: relative;
+}
+
+.Icone_services i {
+    color: rgb(82, 159, 195);
+    float: left;
+    margin-left: 18px;
+    margin-top: 19px;
+}
+
+.cercle_gris {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+
+.rond_bleu {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    border: solid 1px white;
+    background-color: rgb(82, 159, 195);
+    transform: translate(-32%, -38%);
+}
+
+
+/*PAGE PROJETS*/
+
+
+#pageprojets {
+    width: 100%;
+}
+
+#titreprojet {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h2+span {
+    color: rgb(92, 173, 211);
+}
+
+#liseret_menu {;
+    border-color: #E4E4E4;
+    display: flex;
+    justify-content: center;
+}
+
+#liseret_menu .button_menu {
+    display: inline;
+}
+
+.button_menu {
+    position: relative;
+}
+
+.button_menu button {
+    color: rgb(113, 113, 114);
+    background-color: rgb(218, 217, 217);
+    border-color: rgb(218, 217, 217);
+}
+
+.button {
+    margin-right: -6px;
+    margin-left: 6px;
+}
+
+.button_menu :hover
+
+/* Apparence au survol des liens */
+    {
+    color: white;
+    background-color: #5CADD3;
+    border-color: #468CAD;
+
+}
+
+.button_menu :focus {
+    color: white;
+    background-color: #5CADD3;
+    border-color: #468CAD;
+}
+
+.button_menu .fleche-bas {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: calc(50% - 6px);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #4D86AA;
+    display: none;
+}
+
+.button_menu:hover .fleche-bas {
+    display: block
+}
+
+#photos_projets {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+
+.conteneurimage img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.conteneurimage .descripimg {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: none;
+}
+
+.conteneurimage:hover .descripimg {
+    display: block;
+}
+
+.conteneurimage {
+    width: 22%;
+    height: auto;
+    margin-top: 2em;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-bottom: 15px
+}
+.conteneurimage p {
+padding-left: 5%;
+font-weight: bold; 
+}
+
+.far,
+.fa-eye {
+    position: absolute;
+    top: -20px;
+    right: 5%;
+    color: white;
+    background-color: #509CAF;
+    border-radius: 50%;
+    padding: 12px;
+    border: solid 2px white;
+}
+
+/*PAGE CONTACT*/
+
+#pagecontact {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#carte {
+    position: absolute;
+    z-index: 0;
+    max-width: 100%;
+    height: 550px;
+}
+
+.calc {
+    position: absolute;
+    z-index: 99;
+    background-color:cadetblue;
+    width: 100%;
+    height: 100%;
+    opacity: 0.41;
+    
+}
+
+iframe {
+    max-width: 100%;
+    height: 550px;
+
+}
+
+#formulaire {
+    position: absolute;
+    z-index: 3;
+    right: 5em;
+    height: 31em;
+    margin-top: 2em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background-color: rgba(242, 246, 248, 0.7)
+}
+
+textarea {
+    width: 17.5em;
+    height: 10em;
+}
+
+.button {
+    background-color: rgb(92, 173, 211);
+    border: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 4px solid #438aa6;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.infocontact {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em
+}

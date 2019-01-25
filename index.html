@@ -1,0 +1,260 @@
+<!-- index.html
+    en cours de création
+Par Mathilde Mercier-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="projet2.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="tel.css" />   
+    <link rel="icon" href="favicon.ico" />
+    <title>Webagency: l'agence de tous vos projets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="bloc_page">
+
+    <header id="menu">
+        <!-- menu en haut toujours visible-->
+
+        <div id="logo">
+            <img src="images/logo.png" alt="logo" />
+        </div>
+
+        <nav id="sommaire">
+            <ul id="inligne">
+                <li><a href="#pageaccueil">Accueil</a></li>
+                <li><a href="#pageservices">Services</a></li>
+                <li><a href="#pageprojets">Portfolio</a></li>
+                <li><a href="#pagecontact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+
+    <!-- page de presentation-->
+    <section id="pageaccueil">
+            <div class="images_accueil">
+                <img src="images/slider/bg1.jpg" alt="Une petite fille souriante les doigts plein de peinture" />
+            </div>
+            <div class="barre1"></div>
+            <div class="barre2"></div>
+            <div class="fas fa-angle-right"></div>
+            <div class="fas fa-angle-left"></div>
+            <div class="texte_accueil">
+                <h1> <strong class="blue"> WEBAGENCY</strong>: L'AGENCE DE TOUS <br>
+                    VOS PROJETS</h1>
+                <p>Vous avez un projet web? La WebAgency vous aide à le réaliser!</p>
+                <button>Plus d'infos</button>
+            </div>
+        
+    </section>
+
+
+    <!-- page services-->
+    <section id="pageservices">
+
+        <section class="presentation">
+            <h2>NOS SERVICES</h2>
+            <div class="cercle_trait">
+                <div class="cercle"><span class="fas fa-circle"></span></div>
+                <div class="trait"></div>
+            </div>
+            <p>Notre expertise à votre service</p>
+        </section>
+
+
+        <section class="illustration">
+            <img src="images/main-feature.png" alt="un écran d'ordinateur" />
+        </section>
+
+        <section class="explication">
+            <div class="vide">
+            </div>
+
+            <!-- UX-->
+            <div class="ux">
+                <div class="Logo_services">
+                    <div class="Icone_services">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="cercle_gris"></div>
+                        <div class="rond_bleu"></div>
+                    </div>
+                </div>
+
+                <div class="texte">
+                    <strong>UX design</strong><br>
+                    L'ergonomie et l'expérience utilisateur optimisé pour une utilisation agréable des sites
+                </div>
+            </div>
+            <!-- UI-->
+            <div class="ui">
+                <div class="Logo_services">
+                    <div class="Icone_services">
+                        <i class="fas fa-cubes"></i>
+                        <div class="cercle_gris"></div>
+                        <div class="rond_bleu"></div>
+                    </div>
+                </div>
+                <div class="texte"><strong>UI design</strong><br>
+                    La conception de l'interface produit est réfléchie sur sur chaque élément graphique
+                </div>
+            </div>
+            <!-- SEO-->
+            <div class="seo">
+                <div class="Logo_services">
+                    <div class="Icone_services">
+                        <i class="fas fa-chart-pie"></i>
+                        <div class="cercle_gris"></div>
+                        <div class="rond_bleu"></div>
+                    </div>
+                </div>
+                <div class="texte"><strong>SEO Design</strong><br>
+                    Tout est pensé pour un référencement naturel et l'amélioration de la position de votre site dans
+                    les moteurs de recherche
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- page projets-->
+    <section id="pageprojets">
+        <section id="titreprojet">
+            <h2>NOS PROJETS</h2>
+            <div class="cercle_trait">
+                <div class="cercle"><span class="fas fa-circle"></span></div>
+                <div class="trait"></div>
+            </div>
+            <p>Voici quelques créations réalisés par notre agence</p>
+        </section>
+
+        <section id="menuprojet">
+            <nav>
+                <div id="liseret_menu">
+                    <div class="button_menu">
+                        <button class="button">All works</button>
+                        <div><span class="fleche-bas"></span></div>
+                    </div>
+                    <div class="button_menu">
+                        <button class="button">Creative</button>
+                        <span class="fleche-bas"></span>
+                    </div>
+                    <div class="button_menu">
+                        <button class="button">Corporate</button>
+                        <span class="fleche-bas"></span>
+                    </div>
+                    <div class=" button_menu">
+                        <button class="button">Portfolio</button>
+                        <span class="fleche-bas"></span>
+                    </div>
+
+                </div>
+            </nav>
+        </section>
+
+        <section id="photos_projets">
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/01.jpg" alt="lunettes">
+
+                <figcaption class="descripimg">
+                    <p>Site pour <br> un client opticien</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/02.jpg" alt="lapin">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> un magasin d'articles de fête</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/03.jpg" alt="pompadour">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> la marque pompadour</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/04.jpg" alt="imprimerie">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> une imprimerie</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/05.jpg" alt="design">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> un fabricant de sacs design</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/06.jpg" alt="ingenierie">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> un cabinet d'architecture</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/07.jpg" alt="air">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> pour le musée de l'air</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+
+
+            <figure class="conteneurimage">
+                <img src="images/portfolio/redim/08.jpg" alt="fournitures">
+                <figcaption class="descripimg">
+                    <p>Site pour <br> une librairie papetterie</p>
+                    <i class="fas fa-eye"></i>
+                </figcaption>
+            </figure>
+        </section>
+    </section>
+
+
+    <!-- page contact-->
+    <section id="pagecontact">      
+        <section id="carte">
+                <div class="calc"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609686059!2d2.3476315516096316!3d48.873051779187136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1536070002612"
+                width="1360" height="800" style="border:0; " allowfullscreen></iframe>
+            
+        </section>
+        <div id="formulaire">
+            <div class="infocontact">
+                <h2>Contact Info</h2><br>
+                <em>WebAgency SAS</em><br>
+                25 rue d'Hauteville<br>
+                75010 Paris<br>
+                Tel: 01 02 03 04 05<br>
+            </div>
+            <form method="post" action="traitement.php">
+                <p>
+                    <input type="text" name="name" id="name" placeholder="Name" size="30" maxlength="10" required /><br><br>
+                    <input type="email" name="email" id="email" placeholder="Email" size="30" maxlength="50" required /><br><br>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" size="30" maxlength="50"
+                        required /><br><br>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea> <br><br>
+                    <input class="button" type="button" value="Send Message"><br><br>
+                </p>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
